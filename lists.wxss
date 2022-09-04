@@ -1,0 +1,20 @@
+/* pages/lists/lists.wxss */
+.texts-list{
+	width:90%;
+	line-height: 60rpx;
+	font-size:10rpx;
+}
+
+.fff text{
+   font-size: 40px;
+   color: #A9A6A9;
+   /* 字体风格-粗细 */
+   font-weight: bold;
+   margin: 50px ;
+}
+
+.list-item{
+	display:flex;
+	flex-direction: row;
+	padding: 20rpx;
+}

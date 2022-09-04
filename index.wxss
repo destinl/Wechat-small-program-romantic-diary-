@@ -1,0 +1,128 @@
+/**index.wxss**/
+.Container{
+	border-top: 1rpx solid #e0e0e0;
+	display: flex;
+   	flex-direction:column;
+}
+.header{  
+	border: 1rpx solid #e0e0e0;
+	border-radius: 10rpx; /*边框圆角平滑度*/
+	box-shadow: 0 0 5px #e0e0e0; /*边框阴影*/
+	display: flex;/*伸缩布局*/
+	padding: 20rpx; /*内边距*/
+	margin: 20rpx; /*外边距(跟别的组件之间的间距）*/
+	align-items: center; /*侧轴对其，就是说的y轴*/
+	width:90%;
+   }
+
+   .dd{
+	display: flex;
+	
+   }
+
+   .dd image{ 
+	width: 40rpx;
+	height: 40rpx;
+	margin-right: 20rpx;/*(内组件之间的间距）*/
+	 }
+
+	 
+.aa{
+	flex-direction: row;
+	margin: 10rpx; /*外边距(跟别的组件之间的间距）*/
+	display: flex;/*伸缩布局*/
+}
+.aa text{
+	flex: 1; /*采用固比模型*/
+	font-size: 40rpx;  
+	color: #888;
+	margin-top: 10rpx ;
+	 margin-left: 20rpx;
+}
+.bb{
+	flex-direction: row;
+	margin: 10rpx; /*外边距(跟别的组件之间的间距）*/
+	display: flex;/*伸缩布局*/
+}
+.bb text{
+	flex: 1; /*采用固比模型*/
+	font-size: 40rpx;  
+	color: #888;
+	margin-top: 15rpx ;
+	display:flex;
+  }
+
+.cc image{
+
+	height: 120rpx;
+	margin-bottom: 15rpx ;
+	position: fixed;
+	bottom: 0;
+	width: 180%;
+}
+
+image{
+	width:60rpx;
+  }
+
+swiper{
+	height:400rpx;
+}
+
+swiper image{
+	width:100%;
+	height:100%;
+}
+
+#news-list{
+	min-height:600rpx;
+	padding:15rpx;
+}
+
+.list-item{
+	display:flex;
+	flex-direction: row;
+	border-bottom: 1rpx solid gray;
+}
+
+.list-item image{
+	width:230rpx;
+	height:150rpx;
+	margin:10rpx;
+}
+
+.texts-list{
+	width:90%;
+	line-height: 60rpx;
+	font-size:10rpx;
+}
+
+.fff text{
+   font-size: 40px;
+   color: #A9A6A9;
+   /* 字体风格-粗细 */
+   font-weight: bold;
+   margin: 50px ;
+}
+
+.weiwei{
+	height: 120rpx;
+	margin-bottom: 15rpx ;
+	position: fixed;
+	bottom: 0;
+	display: flex;/*伸缩布局*/
+}
+
+.eee{
+	display:flex;
+	flex-direction: row;
+	border: 1rpx solid #e0e0e0;
+	margin: 20rpx;
+	border-radius: 10rpx; /*边框圆角平滑度*/ 
+	box-shadow: 0 0 5px #e0e0e0; /*边框阴影*/
+	width:90%;
+}
+
+.eee button{
+	margin: 20rpx;
+}

@@ -1,0 +1,26 @@
+
+<view id = 'text-exist'>		
+      <view class='title'>
+          <input name = "title"  maxlength="10" value="" placeholder="{{temp.title}}" bindinput="inputChange" ></input>
+      </view>
+
+    
+
+     <view class='row'>
+        <input  name = "content" value="" placeholder="{{temp.content}}"  bindinput="inputchangeTextHandle" ></input>
+    </view>
+            
+
+    <view class='row'>
+        <input   type = 'number' name = "content" placeholder="{{temp.count}}"  bindinput="inputchangeCount"></input>
+     </view>
+
+
+     <view class='bottom' bindtap="SSave">
+          <button class='btn success'>保存</button>
+     </view>
+
+			
+</view>
+
+

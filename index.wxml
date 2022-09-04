@@ -1,0 +1,70 @@
+<view class = 'Container'>
+	<view class = 'container'>
+		<view class = 'aa'>
+			<!--区域3：天气图标-->
+			<image src = '../../images/{{now.icon}}.png' mode = 'widthFix'></image>
+			<!--区域2：单行天气信息-->
+			<text space="emsp">{{now.temp}}℃    </text>
+		</view>
+		
+		<view class = 'bb'> 
+			<image  src = '../../images/wei.png' mode = 'widthFix'></image>
+			<text space="emsp">{{address.province}} {{address.city}}</text>
+		</view>
+	</view>
+
+
+	<!--幻灯片滚动-->
+	<swiper indicator-dots = "true" autoplay = "true" interval = "5000" duration="500">
+		<block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+			<swiper-item>
+				<image src="{{item.src}}" class = "slide-image"/>
+			</swiper-item>
+		</block>
+
+	</swiper>
+
+
+	<view class="header">
+			<view class = 'dd'>
+				<image src="../../images/find.png" bindtap="addTodoHandle"></image>
+				<input type="text" placeholder="请输入..." value="{{input}}"  bindinput="check"></input>
+			</view>
+			
+			
+
+			
+	</view>
+
+	
+	<!--列表-->
+	<view wx:if="{{text}}">
+		<view class = 'eee'>
+			<button id = 'texts-list' bindtap="goToDetail" data-title= '{{text.title}}'>{{text.title}}--{{text.content}}</button>
+			<icon type="clear" size="16" catchtap="DeleteText" data-title="{{text.title}}"></icon> 
+		</view>
+	</view>
+
+	<view wx:else>
+		<view class = 'fff'>
+			<text>这里空空如也~</text>
+		</view>
+	</view>
+
+
+
+
+
+
+
+    
+
+	<view class = 'cc'  bindtap="onNewItem">
+		<image src = '../../images/add1.png'  mode='aspectFit'></image>
+	</view>
+
+
+	
+		
+
+</view>

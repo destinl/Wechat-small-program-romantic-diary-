@@ -1,0 +1,21 @@
+<!--pages/lists/lists.wxml-->
+<!--新闻列表-->
+<view wx:if="{{text}}">
+	<view id = 'texts-list'>
+		<view class = 'list-item' wx:for="{{text}}" wx:for-item="text" wx:key="{{text.title}}">
+			<button  bindtap="goToDetail" data-title= '{{text.title}}'>{{text.title}}--{{text.content}}</button>
+			<icon type="clear" size="16" catchtap="DeleteText" data-title="{{text.title}}"></icon> 
+
+		</view>
+	</view>
+</view>
+
+<view wx:else>
+	<view class = 'fff'>
+		<text>这里空空如也~</text>
+	</view>
+</view>
+
+
+
+

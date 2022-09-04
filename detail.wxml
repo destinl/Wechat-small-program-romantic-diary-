@@ -1,0 +1,20 @@
+<!--pages/detail/detail.wxml-->
+
+<view class="container">
+	<view class='title'>
+         <input name = "title"  maxlength="10" placeholder="在此输入标题" bindinput="inputChange" ></input>
+    </view>
+
+    <view class='row'>
+        <input  name = "content" placeholder="点击添加文本"  bindinput="inputchangeTextHandle"></input>
+     </view>
+        
+     <view class='row'>
+        <input   type = 'number' name = "content" placeholder="给今天打个分吧！"  bindinput="inputchangeCount"></input>
+     </view>
+
+    <view class='bottom' bindtap="SSave">
+        <button class='btn success'>保存</button>
+    </view>
+</view>
+

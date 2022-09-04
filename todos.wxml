@@ -1,0 +1,34 @@
+<view class="container" >
+	<view class="header">
+		<image src="../../images/add.png" bindtap="addTodoHandle"></image>
+		<input type="text" placeholder="请输入..." value="{{input}}" bindinput="inputChangeHandle" bindconfirm="addTodoHandle"></input>
+	</view>
+
+
+
+    <block wx:if="{{todos.length}}">
+        <view class="footer">
+            <button class="mini-btn" type="primary" size="mini" bindtap="toggleAllHandle">全选</button>
+            <button class="mini-btn" type="primary" size="mini" wx:if="{{leftCount}}">{{leftCount}} {{'未完成'}} 事件</button>
+            <button class="mini-btn" type="primary" size="mini" bindtap="clearHandle">清空完成事件</button>
+        </view>
+
+        <view class="todos">
+          <view class="item{{item.complete?' complete':' '}}" wx:for="{{todos}}"  bindtap="toggleToHandle" data-index="{{index}}"><!--wx:for的任务就是遍历数组的对象个数-->
+                <!-- 图标显示 -->
+                <icon type="{{item.complete?'success':'circle'}}"></icon>
+                <text>{{item.name}}</text>
+                <icon type="clear" size="16" catchtap="DeleteHandle" data-index="{{index}}"></icon>  <!--图标的大小利用size属性即可调整-->
+            </view>
+        </view>
+
+    </block>
+
+
+    <view wx:else>
+        <view class = 'fff'>
+            <text>这里无事发生~</text>
+        </view>
+    </view>
+
+</view>
